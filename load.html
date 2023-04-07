@@ -98,7 +98,9 @@
         }).then(() => {
           document.querySelector("#frame").src = __uv$config.prefix + __uv$config.encodeUrl(game.url);
           alert(__uv$config.bare)
-        });
+        }).catch((error) => {
+          alert(String(error))
+        })
         
       })
     } else if (params.get("app")) {
