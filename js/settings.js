@@ -15,6 +15,11 @@ function resetCloak() {
   localStorage.setItem("tabname", "Art Class")
 }
 
+function updateBareServer() {
+  localStorage.setItem("bareserver", document.querySelector("#bareInput").value)
+  document.querySelector("#bareInput").value = ""
+}
+
 var originalTab = document.title
 var originalFavicon = document.querySelector("link[rel~='icon']").href
 
