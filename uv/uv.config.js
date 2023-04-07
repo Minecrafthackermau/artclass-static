@@ -2,7 +2,7 @@ const bare = localStorage.getItem("bareserver") || "https://artclass.site/bare/"
 
 self.__uv$config = {
     prefix: '/service/',
-    bare: bare,
+    bare: 'https://bare.artclass.site/bare/',
     encodeUrl: Ultraviolet.codec.base64.encode,
     decodeUrl: Ultraviolet.codec.base64.decode,
     handler: '/uv/uv.handler.js',
