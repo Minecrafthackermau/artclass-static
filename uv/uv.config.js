@@ -1,4 +1,4 @@
-const bare = localStorage.getItem("bareserver") || "https://artclass.site/bare/"
+//const bare = localStorage.getItem("bareserver") || "https://artclass.site/bare/"
 
 self.__uv$config = {
     prefix: '/service/',
