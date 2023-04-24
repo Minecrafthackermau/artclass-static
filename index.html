@@ -71,6 +71,7 @@
   
   
   <script>
+    try {
     navigator.serviceWorker.register('./loadsw.js', {
       scope: __uv$config.prefix
     }).then(() => {
@@ -98,5 +99,8 @@
     homebtns.forEach(btn => {
       btn.classList.add(`hvr-${effects[Math.floor(Math.random() * effects.length)]}`)
     })
+  } catch (e) {
+    alert(String(e))
+  }
   </script>
 </body>
